@@ -13,9 +13,9 @@ ghostplay_after_prompt_hook() {
 #ghostplay end
 
 ##
-# Create a new demo package on your system
+# Create a new 'demo' package on your system
 ##
-curl -s https://mush.javanile.org/demo | bash
+curl -s https://mush.javanile.org/new | bash -s demo
 #ghostplay silent
 sleep 3
 #ghostplay end
