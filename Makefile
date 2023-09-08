@@ -1,9 +1,11 @@
 
+clean:
+	@rm -fr demo || true
 
 mush:
 	@bash demos/mush/build.sh
 
-push:
+push: clean
 	@git add .
 	@git commit -am "Updated"
 	@git push
