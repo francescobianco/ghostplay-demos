@@ -7,6 +7,9 @@ demo_width=80
 demo_height=25
 demo_script="curl -sL git.io/ghostplay | bash -s ${demo_dir}/demo.sh"
 
+## Clean-up
+rm -fr demo && true
+
 ## Record demo script
 asciinema rec --overwrite -c "${demo_script}" "${demo_dir}/demo.0.cast"
 
