@@ -1,8 +1,11 @@
 
+install:
+	apt install asciinema
+
 clean:
 	@rm -fr demo || true
 
-mush:
+build-mush:
 	@bash demos/mush/build.sh
 
 push: clean
